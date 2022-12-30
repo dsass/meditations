@@ -10,6 +10,19 @@ function setup() {
 }
 
 function draw() {
+  if(frameCount >=200) {
+    run();
+  }
+  else {
+    background(20);
+    fill(180);
+    textSize(25);
+    textFont('Helvetica');
+    text("Do you ever feel like this?", width/4, height/2);
+  }
+}
+
+function run() {
   background(194, 178, 128, 5);
 
   noStroke();

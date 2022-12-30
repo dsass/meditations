@@ -13,6 +13,7 @@ function setup() {
 }
 
 function draw() {
+  push();
   scale(myScale);
 
   op = (sin(frameCount/100)+1)*3+1;
@@ -29,7 +30,7 @@ function draw() {
   if(x<= 300) {
     x=300+limit;
   }
-
+  pop();
   // noLoop();
 }
 

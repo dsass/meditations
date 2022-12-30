@@ -17,6 +17,7 @@ function setup() {
 }
 
 function draw() {
+  push();
   background(255);
   stroke(0);
 
@@ -28,6 +29,14 @@ function draw() {
   }
   eyeBall();
   checkBlink();
+  pop();
+
+  if(frameCount <= 150) {
+    fill(150);
+    textSize(25);
+    textFont('Helvetica');
+    text("use your mouse, and clicks", 2*width/5, 50);
+  }
 
 }
 

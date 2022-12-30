@@ -72,7 +72,12 @@ function draw() {
 
   // curveVertex(verts[verts.length - 1][0], verts[verts.length - 1][1]);
   // endShape();
-
+  if(frameCount <= 150) {
+    fill(150);
+    textSize(25);
+    textFont('Helvetica');
+    text("use your mouse, and clicks", 2*width/5, 50);
+  }
 }
 
 function mousePressed() {

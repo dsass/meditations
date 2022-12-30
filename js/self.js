@@ -18,7 +18,7 @@ function draw() {
     fill(180);
     textSize(25);
     textFont('Helvetica');
-    text("Do you ever feel like this?", width/4, height/2);
+    text("Do you ever feel like this?", width/3, height/2);
   }
 }
 

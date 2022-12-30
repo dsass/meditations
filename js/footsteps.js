@@ -28,6 +28,13 @@ function draw() {
     makeFootPrint(foot.x, foot.y, foot.mirror, foot.angle);
   }
   startWaves(70);
+
+  if(frameCount <= 80) {
+    fill(150);
+    textSize(25);
+    textFont('Helvetica');
+    text("use your mouse", 2*width/5, 50);
+  }
 }
 
 function getNewFoot() {
